@@ -77,7 +77,19 @@ public class testClass
         Clock1.setHour(12);
         assertEquals("00:01:01 P.M.", Clock1.toString12());
     }
+
+    @Test
+    public void testSetters()
+    {
+        ClockTime Clock = new ClockTime();
+        assertEquals("00:00:00", Clock.toString());
+        Clock.setHour(1);
+        Clock.setMinute(1);
+        Clock.setSecond(1);
+        assertEquals("01:01:01", Clock.toString());
+    }
 }
+
 
 
 
